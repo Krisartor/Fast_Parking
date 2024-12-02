@@ -13,4 +13,5 @@ CREATE TABLE tb_tickets(
     fyh_actualizacion       DATETIME        NULL,
     fyh_eliminacion         DATETIME        NULL,
     estado                  VARCHAR (10)
+    
 );
