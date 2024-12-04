@@ -103,7 +103,7 @@ $html = '
         <b>Fecha de ingreso: </b> '.$fecha_ingreso.' <br>
         <b>Hora de ingreso: </b> '.$hora_ingreso.' <br>
          -------------------------------------------------------------------------------- <br>
-         <b>USUARIO:</b> '.$user_sesion.'
+         <b>OPERARIO:</b> '.$user_sesion.'
         </div>
     </p>
     
