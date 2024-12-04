@@ -81,10 +81,10 @@ $pdf->setPrintFooter(false);
 $pdf->setDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
 // set margins
-$pdf->setMargins(5, 5, 5);
+$pdf->setMargins(3, 3, 3);
 
 // set auto page breaks
-$pdf->setAutoPageBreak(true, 5);
+$pdf->setAutoPageBreak(true, 3);
 
 
 // set image scale factor
@@ -125,11 +125,12 @@ $html = '
            
             <b>DATOS DEL CLIENTE</b> <br>
             <b>SEÑOR(A): </b> '.$nombre_cliente.' <br>
-            <b>NIT/CI.: </b> '.$nit_ci_cliente.'  <br>
-            <b>Fecha de la factura: </b> '.$fecha_factura.' <br>
+            <b>NIT/CC.: </b> '.$nit_ci_cliente.'  <br>
+            <b>PLACA: </b> '.$placa_auto.'  <br>
+            <b>FECHA FACTURA: </b> '.$fecha_factura.' <br>
             -------------------------------------------------------------------------------- <br>
-        <b>De: </b> '.$fecha_ingreso.'<b> Hora: </b>'.$hora_ingreso.'<br>
-        <b>A: </b> '.$fecha_salida.'  <b>Hora: </b>'.$hora_salida.'<br>
+        <b>Servicio Inicio: </b> '.$fecha_ingreso.'<b> Hora: </b>'.$hora_ingreso.'<br>
+        <b>Servicio Finalizo: </b> '.$fecha_salida.'  <b>Hora: </b>'.$hora_salida.'<br>
         <b>Tiempo:  </b> '.$tiempo.'<br>
          -------------------------------------------------------------------------------- <br>
          <table border="1" cellpadding="3">
@@ -141,20 +142,20 @@ $html = '
          </tr>
          <tr>
             <td>'.$detalle.'</td>
-            <td style="text-align: center">Bs. '.$precio.'</td>
+            <td style="text-align: center">$. '.$precio.'</td>
             <td style="text-align: center">'.$cantidad.'</td>
-            <td style="text-align: center">Bs. '.$total.'</td>
+            <td style="text-align: center">$. '.$total.'</td>
          </tr>
          </table>
          <p style="text-align: right">
-         <b>Monto Total: </b> Bs. '.$monto_total.'
+         <b>Monto Total: </b> $. '.$monto_total.'
         </p>
         <p>
             <b>Son: </b>'.$monto_literal.'
         </p>
         <br>
          -------------------------------------------------------------------------------- <br>
-         <b>USUARIO:</b> '.$user_sesion.' <br><br><br><br><br><br><br><br>
+         <b>OPERARIO:</b> '.$user_sesion.' <br><br><br><br><br><br>
          
         <p style="text-align: center">
         </p>
@@ -184,7 +185,7 @@ $style = array(
     'module_height' => 1 // height of a single module in points
 );
 
-$pdf->write2DBarcode($qr,'QRCODE,L',  22,109,30,30, $style);
+$pdf->write2DBarcode($qr,'QRCODE,L',  25,110,26,26, $style);
 
 
 

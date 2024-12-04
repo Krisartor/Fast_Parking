@@ -1,10 +1,8 @@
 <?php
-
-
 include('../app/config.php');
 include('literal.php');
 
-date_default_timezone_set("America/Bogota");
+date_default_timezone_set("America/bogota");
 $fechaHora = date("Y-m-d h:i:s");
 $dia = date("d");
 $mes = date('m');

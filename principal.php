@@ -15,7 +15,7 @@ foreach($informacions as $informacion){
 
 
 
-//recuperar el el numero de la factura
+//recuperar  el numero de la factura
 $contador_del_nro_de_factura = 0;
 $query_facturaciones = $pdo->prepare("SELECT * FROM tb_facturaciones WHERE estado = '1' ");
 $query_facturaciones->execute();

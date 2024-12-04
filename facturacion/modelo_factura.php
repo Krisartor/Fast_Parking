@@ -146,7 +146,7 @@ $style = array(
 
 $QR = 'Factura realizada por el sistema de paqueo HILARI WEB, al cliente Freddy Hilari con nit: 837737277323 
 con el vehiculo con numero de placa 3983FREDD y esta factura se genero en 21 de octubre de 2022 a hr: 18:00';
-$pdf->write2DBarcode($QR,'QRCODE,L',  22,110,25,25, $style);
+$pdf->write2DBarcode($QR,'QRCODE,L',  22,110,20,20, $style);
 
 
 
