@@ -134,7 +134,7 @@ $pdf->writeHTML($html, true, false, true, false, '');
 
 
 
-$style = array(
+/* $style = array(
     'border' => 0,
     'vpadding' => '3',
     'hpadding' => '3',
@@ -142,13 +142,34 @@ $style = array(
     'bgcolor' => false, //array(255,255,255)
     'module_width' => 1, // width of a single module in points
     'module_height' => 1 // height of a single module in points
-);
+); 
 
-$QR = 'Factura realizada por el sistema de paqueo HILARI WEB, al cliente Freddy Hilari con nit: 837737277323 
+$QR = 'Factura realizada por el sistema de paquedero Fast Parking, al cliente Freddy Hilari con nit: 837737277323 
 con el vehiculo con numero de placa 3983FREDD y esta factura se genero en 21 de octubre de 2022 a hr: 18:00';
 $pdf->write2DBarcode($QR,'QRCODE,L',  22,110,20,20, $style);
 
+*/
 
+
+
+
+/////////////////////////////////////////////////
+
+
+
+$style = array(
+    'border' => 0,
+    'vpadding' => '3',
+    'hpadding' => '3',
+    'fgcolor' => array(0,0,0),
+    'bgcolor' => false, //array(255,255,255)
+    'module_width' => 1, // width of a single module in points
+    'module_height' => 1 // height of a single module in points
+);
+
+// QRCODE,L : QR-CODE Low error correction
+$pdf->write2DBarcode('www.tcpdf.org', 'QRCODE,L', 50, 110, 20, 20, $style, 'N');
+$pdf->Text(20, 25, 'QRCODE L');
 
 
 //Close and output PDF document

@@ -122,13 +122,16 @@ function numtoletras($xcifra)
                     break;
                 case 2:
                     if ($xcifra < 1) {
-                        $xcadena = "CERO CON $xdecimales/100 Bs.";
+                      //  $xcadena = "CERO CON $xdecimales/100 PESOS";
+                      $xcadena = " Pesos";
                     }
                     if ($xcifra >= 1 && $xcifra < 2) {
-                        $xcadena = "UN CON $xdecimales/100 Bs.";
+                       // $xcadena = "UN CON $xdecimales/100 PESOS";
+                       $xcadena = " Pesos";
                     }
                     if ($xcifra >= 2) {
-                        $xcadena.= " CON $xdecimales/100 Bs. "; //
+                      //  $xcadena.= " CON $xdecimales/100 PESOS "; //
+                        $xcadena.= " Pesos "; //
                     }
                     break;
             } // endswitch ($xz)
