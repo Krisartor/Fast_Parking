@@ -71,8 +71,12 @@ foreach($datos_tickets as $datos_ticket){
 }
 if($contador_ticket == "0"){
     //echo "no hay ningun registro igual";
-    echo '<script>alert("No hay ningun registro igual");</script>';
+    //echo '<script>alert("No hay ningun registro igual");</script>';
+    
     ?>
+    <div class="alert alert-primary">
+     No hay ningun registro igual
+    </div>
     <script>
         $('#btn_registrar_ticket<?php echo $id_map;?>').removeAttr('disabled');
     </script>
