@@ -1,5 +1,33 @@
+<?php
+include('../app/config.php');
+include('../layout/admin/datos_usuario_sesion.php');
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <?php include('../layout/admin/head.php'); ?>
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    <?php include('../layout/admin/menu.php'); ?>
+    <div class="content-wrapper">
+        <br>
+        <div class="container">
 
-"thousands": ",",
+            <h2>Listado de clientes</h2>
+
+            <br>
+            <script>
+                $(document).ready(function() {
+                    $('#table_id').DataTable( {
+                        "pageLength": 5,
+                        "language": {
+                            "emptyTable": "No hay información",
+                            "info": "Mostrando _START_ a _END_ de _TOTAL_ Clientes",
+                            "infoEmpty": "Mostrando 0 a 0 de 0 Clientes",
+                            "infoFiltered": "(Filtrado de _MAX_ total Clientes)",
+                            "infoPostFix": "",
+                            "thousands": ",",
                             "lengthMenu": "Mostrar _MENU_ Clientes",
                             "loadingRecords": "Cargando...",
                             "processing": "Procesando...",
@@ -36,8 +64,8 @@
                                 <thead>
                                 <th><center>Nro</center></th>
                                 <th>Nombre del cliente</th>
-                                <th>Nit Ci del cliente</th>
-                                <th>Placa del auto</th>
+                                <th>Nit/CC del cliente</th>
+                                <th>Placa Vehiculo</th>
                                 <th><center>Acción</center></th>
                                 </thead>
                                 <tbody>

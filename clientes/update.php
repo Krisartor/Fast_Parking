@@ -56,13 +56,13 @@ include('../layout/admin/datos_usuario_sesion.php');
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="">Nit CI del cliente <span style="color: red"><b>*</b></span></label>
+                                        <label for="">Nit/CC del cliente <span style="color: red"><b>*</b></span></label>
                                         <input type="text" id="nit_ci_cliente" class="form-control" value="<?php echo $nit_ci_cliente;?>">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="">Placa auto <span style="color: red"><b>*</b></span></label>
+                                        <label for="">Placa Vehiculo <span style="color: red"><b>*</b></span></label>
                                         <input type="text" id="placa_auto" class="form-control" value="<?php echo $placa_auto;?>">
                                     </div>
                                 </div>
