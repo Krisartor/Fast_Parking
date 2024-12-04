@@ -134,23 +134,7 @@ $contador_del_nro_de_factura = $contador_del_nro_de_factura +1;
 
                                                                        
                                                                               
-                                                                    <div id="respuesta_buscar_cliente<?php echo $id_map;?>"></div>
-
-                                                                    <!--
-                                                                    <div class="form-group row">
-                                                                        <label for="staticEmail" class="col-sm-4 col-form-label">Nombre:</label>
-                                                                        <div class="col-sm-8">
-                                                                        <input type="text" class="form-control" id="nombre_cliente<?php // echo $id_map;?>" value="<?php //echo $nombre_cliente; ?>">
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="form-group row">
-                                                                        <label for="staticEmail" class="col-sm-4 col-form-label">NIT/CI:</label>
-                                                                        <div class="col-sm-8">
-                                                                        <input type="text" class="form-control" id="nit_ci_cliente<?php //echo $id_map;?>" value="<?php // echo $nit_ci_cliente; ?>">
-                                                                        </div>
-                                                                    </div>    
-                                                                    --> 
+                                                                    <div id="respuesta_buscar_cliente<?php echo $id_map;?>"></div>             
                                                                     <div class="form-group row">
                                                                         <label for="staticEmail" class="col-sm-6 col-form-label">Fecha de ingreso:</label>
                                                                         <div class="col-sm-6">
@@ -169,7 +153,7 @@ $contador_del_nro_de_factura = $contador_del_nro_de_factura +1;
                                                                         <label for="staticEmail" class="col-sm-6 col-form-label">Hora de ingreso:</label>
                                                                         <div class="col-sm-6">
                                                                             <?php
-                                                                            date_default_timezone_set("America/caracas");
+                                                                            date_default_timezone_set("America/Bogota");
                                                                             $fechaHora = date("Y-m-d h:i:s");
                                                                             $hora = date('H');
                                                                             $minutos = date('i');
